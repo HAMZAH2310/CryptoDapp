@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root{
+    --black:#000;
+    --white:#ffffff;
+    --lightgrey:#f1f1f1;
+    --darkblue:#0d102c;
+    --primarycolor:#3d51f2;
+    --secondarycolor:#5670ef;
+    --lightDark:#080A25;
+    --darkText:#8388B4;
+ }
+
+ /* Header Style */
+ header{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 2em 1em;
+ }
+
+ #barContainer{
+  font-size: 1.5rem;
+  cursor: pointer;
+ }
+
+.nav{
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left: 0;
+  background-color: var(--lightDark);
+  width:0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  transition: width 0.3s ease;
+}
+
+.showNav{
+  padding: 1em;
+  padding-top: 5em;
+  max-width: 300px;
+  width: 70%;
+}
+
+.navLink{
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+ .navLink a{
+  color: var(--white);
+  transition: color 0.2s ease;
+ }
+
+ .navLink a:hover{
+  color: var(--primarycolor);
+ }
+
+ .navLogo{
+  margin-bottom: 3rem;
+ }
+
+ .socialLinkContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+ }
+
+ .socialLink{
+  margin-right: 1em;
+  cursor: pointer;
+ }
+
+ @media screen and (min-width:800px){
+  .nav{
+    position: relative;
+    width: auto;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top:0;
+    max-width: 300px;
+  }
+
+  .navLink{
+    margin-right: 2em;
+  }
+
+  .navLogo,#barContainer,.socialLinkContainer{
+    display: none;
+
+  }
+ }
