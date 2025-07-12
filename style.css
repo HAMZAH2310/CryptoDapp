@@ -114,3 +114,43 @@
 
   }
  }
+
+ /* Hero Page */
+ .headline{
+  font-size: 3rem;
+ }
+ .cryptoText{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+ }
+ .btnContainer{
+  margin-top: 2em;
+ }
+ .fa-play{
+  margin-left:.5em;
+ }
+
+ .sectionPic{
+  order: 0;
+ }
+
+ .sectionDesc{
+  order: 1;
+  margin-top: 1em;
+ }
+
+ @media screen and (min-width:800px) {
+   .sectionPic{
+      order: 1;
+    }
+
+ .sectionDesc{
+    order: 0;
+  }  
+ }
+
+@media screen and (min-width:800px) {
+    .headline{
+      font-size: 4rem;
+    }
+}
