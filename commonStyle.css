@@ -82,3 +82,28 @@
  .Btn2{
    border: none;
  }
+
+ .primaryBtn{
+  background-color: var(--primarycolor);
+ }
+
+ .sectionHeader{
+  font-size: 2rem;
+  margin-bottom: .7em;
+ }
+
+ .sectionPara{
+  font-size: 1.1rem;
+  margin-bottom: 3em;
+ }
+
+ .darkPara{
+  color: var(--darkText);
+  font-weight: 500;
+ }
+
+ @media screen and (min-width:1000px){
+    .sectionHeader{
+      font-size: 3rem;
+    }
+ }
