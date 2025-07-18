@@ -538,3 +538,157 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+/*  About Us */
+.aboutDesc{
+  order: 0;
+}
+.statusContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.status h1{
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.status h1 b{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Services */
+
+.services{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.aboutusimgContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.aboutusimgContainer img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.offers{
+  margin-top: 5em;
+  display: grid;
+  gap: 50px;
+}
+
+.eachOffer{
+  display: flex;
+  align-items: flex-start;
+}
+
+.eachOffer img{
+  margin-right: 1em;
+}
+
+.offerDesc h1{
+  margin-bottom: .5em;
+  font-size: 1.5rem;
+}
+
+/* Video */
+
+.videoSection{
+  display: grid;
+}
+
+.videoSectionHeader{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+.video{
+  position: relative;
+  margin-bottom: 1em;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.thumbnail{
+  width: 100%;
+}
+
+.playIcon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Our Team */
+.teamSection{
+  margin-top: 5em;
+}
+
+.eachTeam{
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamPic{
+  width: 80%;
+  margin: auto;
+}
+
+.teamPic img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.teamName{
+  white-space: collapse;
+}
+
+@media screen and (min-width:800px) {
+  .aboutDesc{
+    order: 1;
+  }
+
+  .statusContainer{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .offers{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .videoSection{
+    grid-template-columns: 1fr 3fr;
+  }
+  .videoSectionHeader{
+    z-index: 1;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .offers{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .videoSectionHeader{
+    font-size: 3.5rem;
+  }  
+}
